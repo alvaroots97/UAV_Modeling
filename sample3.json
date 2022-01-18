@@ -1,0 +1,43 @@
+{
+    "elements":
+    {
+        "agent":
+        [
+            { "__type__": "drone", "name": "drone1", "x": "23", "y": "68", "distanceTraveled": "0", "batteryLength": "250", "batteryCharge": "250", "assignedPOI": "" },
+            { "__type__": "drone", "name": "drone2", "x": "59", "y": "51", "distanceTraveled": "0", "batteryLength": "300", "batteryCharge": "300", "assignedPOI": "" } ,
+            { "__type__": "drone", "name": "drone3", "x": "32", "y": "98", "distanceTraveled": "0", "batteryLength": "320", "batteryCharge": "320", "assignedPOI": "" }
+        ]
+    ,
+        "poi":
+        [
+            { "__type__": "poi", "name": "point1", "x": "47", "y": "90", "assignedAgent": "", "criticality": "100" },
+            { "__type__": "poi", "name": "point2", "x": "73", "y": "29", "assignedAgent": "", "criticality": "50" },
+            { "__type__": "poi", "name": "point3", "x": "55", "y": "93", "assignedAgent": "", "criticality": "20"},
+            { "__type__": "poi", "name": "point4", "x": "69", "y": "42", "assignedAgent": "", "criticality": "60" },
+            { "__type__": "poi", "name": "point5", "x": "91", "y": "95", "assignedAgent": "", "criticality": "80"}
+        ]
+    },
+    "routes":
+    {
+        "id": "0000",
+        "type": "droneRoute",
+        "drones":
+        [
+            {
+                "__type__": "droneRoute",
+                "name": "drone1",
+                "route": ["point2", "point1", "point3"]
+            },
+            {
+                "__type__": "droneRoute",
+                "name": "drone2",
+                "route": ["point5", "point2", "point4", "point2"]
+            },
+            {
+                "__type__": "droneRoute",
+                "name": "drone3",
+                "route": ["point3", "point5", "point2"]
+            }
+        ]
+    }
+}
